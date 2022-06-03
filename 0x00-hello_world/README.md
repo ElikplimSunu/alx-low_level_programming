@@ -14,4 +14,6 @@ __4-puts.c:__ this program print text to screen using the _puts_ function in C.
 
 __5-printf.c:__ this program print text to screen using the _printf_ function in C.  
 
-__6-size.c:__ program that prints the size of various types on the computer it is compiled and run on.
+__6-size.c:__ program that prints the size of various types on the computer it is compiled and run on.  
+
+__100-intel:__ this script generates assembly codes for the C code in intel sytax.
