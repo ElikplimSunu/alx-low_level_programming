@@ -8,4 +8,6 @@ __1-compiler:__ this script compiles a C program without linking and saves the o
 
 __2-assembler:__ this script generates assembly code of a C code.  
 
-__3-name:__ this script generates an executable for the _$CFILE_ named _cisfun_.
+__3-name:__ this script generates an executable for the _$CFILE_ named _cisfun_.  
+
+__4-puts.c:__ this program print text to screen using the _puts_ function in C.
