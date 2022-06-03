@@ -16,4 +16,6 @@ __5-printf.c:__ this program print text to screen using the _printf_ function in
 
 __6-size.c:__ program that prints the size of various types on the computer it is compiled and run on.  
 
-__100-intel:__ this script generates assembly codes for the C code in intel sytax.
+__100-intel:__ this script generates assembly codes for the C code in intel sytax.  
+
+__101-quote.c:__ this program writes text to the standard error output.
