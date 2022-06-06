@@ -12,7 +12,7 @@ int main(void)
 	while (i >= 97 && i <= 122)
 	{
 		putchar(i);
-		i++
+		i++;
 	}
 
 	while (j >= 65 && j <= 90)
