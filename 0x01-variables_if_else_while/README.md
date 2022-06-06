@@ -19,4 +19,6 @@ __7-print_tebahpla.c:__ This program prints the alphabeths in reverse.
 
 __8-print_base16.c:__ This program prints the hexadecimal values.  
 
-__9-print_comb.c:__ This program prints the possible combination of somethings...
+__9-print_comb.c:__ This program prints the possible combination of somethings...  
+
+__100-print_comb3.c:__ This program prints the possible combo of some other things
