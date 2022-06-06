@@ -8,9 +8,9 @@
 int main(void)
 {
 	char numbers[] = "0123456789";
-	int size = sizeof(numbers) / sizeof(*numbers);
+	int size = sizeof(numbers) / sizeof(*numbers), i;
 
-	for (int i = 0; i < size - 1; i++)
+	for (i = 0; i < size - 1; i++)
 	{
 		putchar(numbers[i]);
 		putchar('\n');
