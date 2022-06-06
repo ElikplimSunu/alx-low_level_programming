@@ -15,5 +15,7 @@ int size = sizeof(numbers) / sizeof(*numbers);
 		printf("%d", numbers[i]);
 	}
 
+	putchar('\n');
+
 	return (0);
 }
