@@ -15,4 +15,6 @@ __5-print_numbers.c:__ This program prints numbers _0_ through to _1_.
 
 __6-print_numberz.c:__ This program prints numbers one by one ...  
 
-__7-print_tebahpla.c:__ This program prints the alphabeths in reverse.
+__7-print_tebahpla.c:__ This program prints the alphabeths in reverse.  
+
+__8-print_base16.c:__ This program prints the hexadecimal values.
