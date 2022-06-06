@@ -7,12 +7,11 @@
  */
 int main(void)
 {
-	char numbers[] = "0123456789";
-	int size = sizeof(numbers) / sizeof(*numbers), i;
+	int i;
 
-	for (i = 0; i < size - 1; i++)
+	for (i = 48; i <= 57; i++)
 	{
-		putchar(numbers[i]);
+		putchar(i);
 		putchar('\n');
 	}
 
