@@ -13,7 +13,7 @@ int main(void)
 {
 	char alphabeth[] = "abcdefghijklmnopqrstuvwxyz";
 
-	int i, size = size of alphabeth / size of alphabeth[0];
+	int i, size = sizeof alphabeth / sizeof alphabeth[0];
 
 	for (i = 0; i < size; i++)
 		putchar(alphabeth[i]);
