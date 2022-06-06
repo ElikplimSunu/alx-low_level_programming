@@ -13,9 +13,9 @@ int main(void)
 {
 	char alphabeth[] = "abcdefghijklmnopqrstuvwxyz";
 
-	int i, size = sizeof alphabeth / sizeof alphabeth[0];
+	int i, size = sizeof(alphabeth) / sizeof(alphabeth[0]);
 
-	for (i = 0; i < size; i++)
+	for (i = 0; i < size - 1; i++)
 		putchar(alphabeth[i]);
 	putchar('\n');
 	return (0);
