@@ -1,26 +1,51 @@
 #include <stdio.h>
 
 /**
- * main - print the sum of all even number in the first 10 fibo start at 1,2
+ * main - print the first 98 fibo starting with 1,2
  *
  * Return: Always 0
  */
 
 int main(void)
 {
-	long int n1 = 0, n2 = 1, prevS = 0, sum = 0;
+int count;
+	unsigned long fib1 = 0, fib2 = 1, sum;
+	unsigned long fib1_half1, fib1_half2, fib2_half1, fib2_half2;
+	unsigned long half1, half2;
 
-	while (1)
+	for (count = 0; count < 92; count++)
 	{
-		prevS = n1 + n2;
-		if (prevS > 4000000)
-			break;
-		if (prevS % 2 == 0)
-			sum += prevS;
-		n1 = n2;
-		n2 = prevS;
+		sum = fib1 + fib2;
+		printf("%lu, ", sum);
+
+		fib1 = fib2;
+		fib2 = sum;
 	}
 
-	printf("%ld\n", sum);
+	fib1_half1 = fib1 / 10000000000;
+	fib2_half1 = fib2 / 10000000000;
+	fib1_half2 = fib1 % 10000000000;
+	fib2_half2 = fib2 % 10000000000;
+
+	for (count = 93; count < 99; count++)
+	{
+		half1 = fib1_half1 + fib2_half1;
+		half2 = fib1_half2 + fib2_half2;
+		if (fib1_half2 + fib2_half2 > 9999999999)
+		{
+			half1 += 1;
+			half2 %= 10000000000;
+		}
+
+		printf("%lu%lu", half1, half2);
+		if (count != 98)
+			printf(", ");
+
+		fib1_half1 = fib2_half1;
+		fib1_half2 = fib2_half2;
+		fib2_half1 = half1;
+		fib2_half2 = half2;
+	}
+	printf("\n");
 	return (0);
 }
