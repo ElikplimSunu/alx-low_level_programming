@@ -1,35 +1,33 @@
-#include <stdio.h>
+#include "main.h"
+
 
 /**
- * main - print from 1 to 10, multiply of 3, Fizz, 5, Buzz, both FizzBuzz
+ * print_triangle - print a triangle
  *
- * Return: 0
+ * @size: int
+ *
+ * Return: Nothing
  */
 
-
-int main(void)
+void print_triangle(int size)
 {
-	int i;
+	int i, j,  s;
 
-	for (i = 1; i <= 100; i++)
+	if (size > 0)
 	{
-		if ((i % 3 == 0) && (i % 5 == 0))
-			printf("FizzBuzz");
+		for (i = 1; i <= size; i++)
+		{
+			for (s = size - i; s > 0; s--)
+				_putchar(' ');
+			for (j = 0; j < i; j++)
+				_putchar('#');
 
-		else if (i % 3 == 0)
-			printf("Fizz");
-
-		else if (i % 5 == 0)
-			printf("Buzz");
-
-		else
-			printf("%d", i);
-		if (i == 100)
-			break;
-		printf(" ");
+			if (i == size)
+				break;
+			_putchar('\n');
+		}
 	}
 
-	printf("\n");
+	_putchar('\n');
 
-	return (0);
 }
